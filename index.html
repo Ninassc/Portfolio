@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Portifólio</title>
+</head>
+
+<body>
+
+    <section id="inicio" class="pagina1">
+        <header>
+            <nav id="nav-inicial">
+                <menu>
+                    <a href="#inicio">
+                        <li>INÍCIO</li>
+                    </a>
+                    <a href="#sobre-mim">
+                        <li>SOBRE MIM</li>
+                    </a>
+                    <a href="#habilidades">
+                        <li>HABILIDADES</li>
+                    </a>
+                    <a href="#projetos">
+                        <li>PROJETOS</li>
+                    </a>
+                    <a href="#contato">
+                        <li>CONTATO</li>
+                    </a>
+                </menu>
+            </nav>
+
+            <div class="input-mudarfundo">
+                <a id="icone-fundo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="CurrentColor">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z" />
+                    </svg>
+                </a>
+            </div>
+
+            <a id="icone-menu">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27.125 12.9167H3.875M27.125 7.75H3.875M27.125 18.0833H3.875M27.125 23.25H3.875"
+                        stroke="#D9D9D9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+
+            <nav id="nav-menu">
+                <menu>
+                    <a href="#inicio">
+                        <li>INÍCIO</li>
+                    </a>
+                    <a href="#sobre-mim">
+                        <li>SOBRE MIM</li>
+                    </a>
+                    <a href="#habilidades">
+                        <li>HABILIDADES</li>
+                    </a>
+                    <a href="#projetos">
+                        <li>PROJETOS</li>
+                    </a>
+                    <a href="#contato">
+                        <li>CONTATO</li>
+                    </a>
+                </menu>
+            </nav>
+        </header>
+
+
+
+        <div id="inicio" class="content-inicio">
+            <div class="parte-esquerda">
+                <div class="texto-titulo">
+                    <h1 id="linha1"></h1>
+                    <h1 id="linha2"></h1>
+                    <h1 id="linha3"></h1>
+                </div>
+
+                <div class="botoes-inicio">
+                    <a id="a-projetos" href="#projetos">PROJETOS</a>
+                    <a id="a-contato" href="#contato">CONTATO</a>
+                </div>
+
+                <div class="icones">
+                    <a href="https://github.com/Ninassc" id="github"><svg width="40" height="40" viewBox="0 0 40 40"
+                            fill="CurrentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_177)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.0165 0C8.94791 0 0 9.01388 0 20.1653C0 29.0792 5.73324 36.6246 13.6868 39.2952C14.6812 39.4959 15.0454 38.8613 15.0454 38.3274C15.0454 37.8599 15.0126 36.2575 15.0126 34.5879C9.4445 35.79 8.28498 32.1841 8.28498 32.1841C7.39015 29.847 6.06429 29.2463 6.06429 29.2463C4.24185 28.011 6.19704 28.011 6.19704 28.011C8.21861 28.1446 9.27938 30.081 9.27938 30.081C11.0686 33.1522 13.9518 32.2844 15.1118 31.7502C15.2773 30.4481 15.8079 29.5467 16.3713 29.046C11.9303 28.5785 7.25781 26.8425 7.25781 19.0967C7.25781 16.8932 8.05267 15.0905 9.31216 13.6884C9.11344 13.1877 8.41733 11.1174 9.51128 8.34644C9.51128 8.34644 11.2014 7.81217 15.0122 10.4164C16.6438 9.97495 18.3263 9.7504 20.0165 9.74851C21.7067 9.74851 23.4295 9.98246 25.0205 10.4164C28.8317 7.81217 30.5218 8.34644 30.5218 8.34644C31.6158 11.1174 30.9192 13.1877 30.7205 13.6884C32.0132 15.0905 32.7753 16.8932 32.7753 19.0967C32.7753 26.8425 28.1028 28.5449 23.6287 29.046C24.358 29.6802 24.9873 30.882 24.9873 32.7851C24.9873 35.4893 24.9545 37.6596 24.9545 38.327C24.9545 38.8613 25.3192 39.4959 26.3132 39.2956C34.2667 36.6242 39.9999 29.0792 39.9999 20.1653C40.0327 9.01388 31.052 0 20.0165 0Z"
+                                    fill="CurrentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3_177">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a id="linkedin" href=""><svg width="40" height="40" viewBox="0 0 40 40" fill="CurrentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_180)">
+                                <path
+                                    d="M37.0391 0H2.95312C1.32031 0 0 1.28906 0 2.88281V37.1094C0 38.7031 1.32031 40 2.95312 40H37.0391C38.6719 40 40 38.7031 40 37.1172V2.88281C40 1.28906 38.6719 0 37.0391 0ZM11.8672 34.0859H5.92969V14.9922H11.8672V34.0859ZM8.89844 12.3906C6.99219 12.3906 5.45313 10.8516 5.45313 8.95312C5.45313 7.05469 6.99219 5.51562 8.89844 5.51562C10.7969 5.51562 12.3359 7.05469 12.3359 8.95312C12.3359 10.8437 10.7969 12.3906 8.89844 12.3906ZM34.0859 34.0859H28.1562V24.8047C28.1562 22.5937 28.1172 19.7422 25.0703 19.7422C21.9844 19.7422 21.5156 22.1562 21.5156 24.6484V34.0859H15.5938V14.9922H21.2812V17.6016H21.3594C22.1484 16.1016 24.0859 14.5156 26.9688 14.5156C32.9766 14.5156 34.0859 18.4688 34.0859 23.6094V34.0859V34.0859Z"
+                                    fill="CurrentColor" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3_180">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="parte-direita">
+                <div class="imagem-foto">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pagina2" id="sobre-mim">
+        <h2>&lt;H2&gt;SOBRE MIM&lt;/H2&gt;</h2>
+        <div class="apresentacao">
+            <p>
+                Oi, meu nome é Nina Sepúlveda, tenho 16 anos e curso o Ensino Médio integrado ao Técnico em Informática
+                no Colégio Cotemig. Nos últimos anos venho estudando e desenvolvendo projetos principalmente com Python
+                e C# (usando .NET, ASP.NET e Entity Framework), além de ter experiência com Java, JavaScript, React e
+                bancos de dados como SQL Server e MySQL. Sou apaixonada pela área de games 🎮 e já criei projetos com
+                Unity e C#, unindo criatividade e programação. Estou sempre em busca de novos aprendizados para
+                aprimorar minhas habilidades e transformar ideias em projetos reais.
+            </p>
+        </div>
+        <a href="#inicio" class="voltar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="CurrentColor">
+                <path
+                    d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z" />
+            </svg>
+        </a>
+    </section>
+
+    <section class="pagina3" id="habilidades">
+        <div class="hard-skills">
+            <h2>&lt;H2&gt;HARD SKILLS&lt;/H2&gt;</h2>
+            <div class="hard-content">
+                <div class="hskill" id="csharp">C#</div>
+                <div class="hskill" id="aspnet">Asp.Net</div>
+                <div class="hskill" id="unity">Unity</div>
+                <div class="hskill" id="python">Python</div>
+                <div class="hskill" id="django">Django</div>
+                <div class="hskill" id="sqlserver">SQL Server</div>
+                <div class="hskill" id="mysql">MySql</div>
+                <div class="hskill" id="javascript">JavaScript</div>
+                <div class="hskill" id="react">React</div>
+                <div class="hskill" id="html5">HTML5</div>
+                <div class="hskill" id="css3">CSS3</div>
+                <div class="hskill" id="git">Git</div>
+            </div>
+            <div class="modal" id="modal">
+                <div id="content-modal">
+                    <div id="close"><svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="2" y1="-2" x2="26.4756" y2="-2"
+                                transform="matrix(0.711836 -0.702345 0.711837 0.702345 2.76233 22)" stroke="#D9D9D9"
+                                stroke-width="4" stroke-linecap="round" />
+                            <line x1="2" y1="-2" x2="26.4756" y2="-2"
+                                transform="matrix(0.711837 0.702345 -0.711836 0.702345 1 2)" stroke="#D9D9D9"
+                                stroke-width="4" stroke-linecap="round" />
+                        </svg></div>
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="soft-skills">
+            <h2>&lt;H2&gt;SOFT SKILLS&lt;/H2&gt;</h2>
+            <div class="soft-content">
+                <div class="skills">&lt;/&gt; Comunicação</div>
+                <div class="skills">&lt;/&gt; Organização</div>
+                <div class="skills">&lt;/&gt; Proatividade</div>
+                <div class="skills">&lt;/&gt; Adaptabilidade</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pagina4" id="projetos">
+        <h2>&lt;H2&gt;PROJETOS&lt;/H2&gt;</h2>
+        <div class="proj">
+            <div class="projeto">
+                <h4>API Video Game</h4>
+                <p>API RESTful em ASP.NET Core para gerenciar um catálogo de jogos com CRUD completo (listar, buscar,
+                    cadastrar, atualizar e excluir). Usa EF Core + SQL Server em Code-First com migrations e segue boas
+                    práticas de arquitetura.</p>
+                <div class="projeto-use">
+                    <div class="use">
+                        C#
+                    </div>
+                    <div class="use">
+                        SQL SERVER
+                    </div>
+                </div>
+                <div class="botao-git">
+                    <a class="ver-git" href="https://github.com/Ninassc/VideoGameAPI">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <h4>Lista de Tarefas</h4>
+                <p>Projeto feito em React para adicionar afazeres. O cliente pode remover e marcar como feito</p>
+                <div class="projeto-use">
+                    <div class="use">
+                        HTML
+                    </div>
+                    <div class="use">
+                        React
+                    </div>
+                </div>
+                <div class="botao-git">
+                    <a class="ver-git" href="https://github.com/Ninassc/TodoList">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <h4>Autenticação</h4>
+                <p>Sistema de autenticação de usuários, com backend e frontend, utilizando o framework do Python Django,
+                    HTML e CSS. Trm como banco de dados o SQL Lite que armazena todas as informações dos usuários</p>
+                <div class="projeto-use">
+                    <div class="use">
+                        Python
+                    </div>
+                    <div class="use">
+                        SQL Lite
+                    </div>
+                </div>
+                <div class="botao-git">
+                    <a class="ver-git" href="https://github.com/Ninassc/Authentication-System">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <h4>Cadastro de Pc</h4>
+                <p>Sistema feito com Python customtkinter para cadastrar computadores, armazenando dados como:
+                    Modelo, preço, gasto, valor da venda e observações. Todos esses dados são armazenados em uma
+                    planilha exel </p>
+                <div class="projeto-use">
+                    <div class="use">
+                        Python
+                    </div>
+                    <div class="use">
+                        Custom Tkinter
+                    </div>
+                </div>
+                <div class="botao-git">
+                    <a class="ver-git" href="https://github.com/Ninassc/Cadastro-de-Computadores">Ver no GitHub</a>
+                </div>
+            </div>
+
+
+            <div class="projeto">
+                <h4>Automação</h4>
+                <p>Projeto de automação, utilizando Python e Pyautogui. Uma série de produtos e suas informações
+                    localizadas em uma planilha csv, são cadastrados automaticamente em um site. Ou seja, o usuário
+                    não tem o trabalho de cadastrar um por um</p>
+                <div class="projeto-use">
+                    <div class="use">
+                        Python
+                    </div>
+                    <div class="use">
+                        Pyautogui
+                    </div>
+                </div>
+                <div class="botao-git">
+                    <a class="ver-git" href="https://github.com/Ninassc/Automation">Ver no GitHub</a>
+                </div>
+            </div>
+
+            <div class="projeto">
+                <h4>Site e-commerce</h4>
+                <p>Site de e-commerce de tênis responsivo feito utilizando HTML, CSS e JavaScript.</p>
+                <div class="projeto-use">
+                    <div class="use">
+                        HTML
+                    </div>
+                    <div class="use">
+                        Java Script
+                    </div>
+                </div>
+                <div class="botao-git">
+                    <a class="ver-git" href="https://github.com/Ninassc/SneakMe">Ver no GitHub</a>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <section class="pagina5" id="contato">
+        <h2>&lt;H2&gt;CONTATO&lt;/H2&gt;</h2>
+        <div class="content-pagina5">
+            <form action="">
+                <div class="campo">
+                    <h4>/Nome&gt;</h4>
+                    <input id="nome" type="text">
+                </div>
+
+                <div class="campo">
+                    <h4>/E-mail&gt;</h4>
+                    <input id="email" type="email">
+                </div>
+
+                <div class="campo">
+                    <h4>/Assunto&gt;</h4>
+                    <textarea name="" id="assunto"></textarea>
+                </div>
+
+                <button class="enviar" type="submit">Enviar Mensagem</button>
+            </form>
+
+            <div class="informacoes">
+                <div class="bloco1">
+                    <div class="parte-email">
+                        <div class="carta">
+                            <svg width="33" height="26" viewBox="0 0 33 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.6667 3H3V23H29.6667V3Z" stroke="#D9D4DD" stroke-width="5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.66669 3.6665L16.3334 13.3332" stroke="#D9D4DD" stroke-width="5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M29.6666 3L16.3333 13.3333" stroke="#D9D4DD" stroke-width="5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <a href="mailto:ninasepulvedacarvalho@gmail.com">ninasepulvedacarvalho@gmail.com</a>
+
+                    </div>
+
+                    <div class="parte-telefone">
+                        <div class="telefone">
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.127 15.9817C18.0495 23.9714 21.3162 27.4188 28.8905 31.7154L26.5711 35.7047C17.8201 30.4467 12.6749 23.049 9.90615 17.466L14.127 15.9817Z"
+                                    fill="#D9D4DD" />
+                                <path
+                                    d="M14.6478 5.85675C16.077 6.06911 17.368 7.47159 17.501 8.85697C17.7102 11.0371 18.1353 12.6518 18.8994 14.6895C19.3192 15.8088 18.9536 16.8249 18.2016 17.4005C17.188 18.1764 16.4939 19.2561 15.9554 20.1946C15.209 21.4954 11.8013 20.8739 10.7913 19.1787C8.71554 15.6948 6.68604 9.55006 8.27072 5.84947C8.51963 5.2682 9.17653 5.04379 9.91351 5.15329L14.6478 5.85675Z"
+                                    fill="#D9D4DD" />
+                                <path
+                                    d="M40.3141 33.21C40.2627 31.8445 38.9437 30.4655 37.5034 30.1742C35.2369 29.7158 33.5907 29.1232 31.5405 28.1617C30.4144 27.6335 29.3024 27.8541 28.6069 28.4899C27.6694 29.3468 26.451 29.8678 25.3997 30.2598C23.9426 30.8032 24.186 34.0728 25.8465 35.2236C29.2591 37.5887 35.4743 40.2304 39.5548 39.1897C40.1958 39.0263 40.5107 38.4374 40.4842 37.7333L40.3141 33.21Z"
+                                    fill="#D9D4DD" />
+                            </svg>
+                        </div>
+                        <a href="tel:+5531971483681">+55 31 97148-3681</a>
+                    </div>
+                </div>
+
+                <div class="bloco2">
+                    <div class="parte-git">
+                        <div class="svg-git">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="CurrentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_177)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.0165 0C8.94791 0 0 9.01388 0 20.1653C0 29.0792 5.73324 36.6246 13.6868 39.2952C14.6812 39.4959 15.0454 38.8613 15.0454 38.3274C15.0454 37.8599 15.0126 36.2575 15.0126 34.5879C9.4445 35.79 8.28498 32.1841 8.28498 32.1841C7.39015 29.847 6.06429 29.2463 6.06429 29.2463C4.24185 28.011 6.19704 28.011 6.19704 28.011C8.21861 28.1446 9.27938 30.081 9.27938 30.081C11.0686 33.1522 13.9518 32.2844 15.1118 31.7502C15.2773 30.4481 15.8079 29.5467 16.3713 29.046C11.9303 28.5785 7.25781 26.8425 7.25781 19.0967C7.25781 16.8932 8.05267 15.0905 9.31216 13.6884C9.11344 13.1877 8.41733 11.1174 9.51128 8.34644C9.51128 8.34644 11.2014 7.81217 15.0122 10.4164C16.6438 9.97495 18.3263 9.7504 20.0165 9.74851C21.7067 9.74851 23.4295 9.98246 25.0205 10.4164C28.8317 7.81217 30.5218 8.34644 30.5218 8.34644C31.6158 11.1174 30.9192 13.1877 30.7205 13.6884C32.0132 15.0905 32.7753 16.8932 32.7753 19.0967C32.7753 26.8425 28.1028 28.5449 23.6287 29.046C24.358 29.6802 24.9873 30.882 24.9873 32.7851C24.9873 35.4893 24.9545 37.6596 24.9545 38.327C24.9545 38.8613 25.3192 39.4959 26.3132 39.2956C34.2667 36.6242 39.9999 29.0792 39.9999 20.1653C40.0327 9.01388 31.052 0 20.0165 0Z"
+                                        fill="CurrentColor" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_177">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <a href="https://github.com/Ninassc">Ninassc</a>
+                    </div>
+
+                    <div class="parte-linkedin">
+                        <div class="svg-linkedin">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="CurrentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_180)">
+                                    <path
+                                        d="M37.0391 0H2.95312C1.32031 0 0 1.28906 0 2.88281V37.1094C0 38.7031 1.32031 40 2.95312 40H37.0391C38.6719 40 40 38.7031 40 37.1172V2.88281C40 1.28906 38.6719 0 37.0391 0ZM11.8672 34.0859H5.92969V14.9922H11.8672V34.0859ZM8.89844 12.3906C6.99219 12.3906 5.45313 10.8516 5.45313 8.95312C5.45313 7.05469 6.99219 5.51562 8.89844 5.51562C10.7969 5.51562 12.3359 7.05469 12.3359 8.95312C12.3359 10.8437 10.7969 12.3906 8.89844 12.3906ZM34.0859 34.0859H28.1562V24.8047C28.1562 22.5937 28.1172 19.7422 25.0703 19.7422C21.9844 19.7422 21.5156 22.1562 21.5156 24.6484V34.0859H15.5938V14.9922H21.2812V17.6016H21.3594C22.1484 16.1016 24.0859 14.5156 26.9688 14.5156C32.9766 14.5156 34.0859 18.4688 34.0859 23.6094V34.0859V34.0859Z"
+                                        fill="CurrentColor" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_180">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <a href="www.linkedin.com/in/nina-sepúlveda-883984344">Nina Sepúlveda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2025 Nina Sepúlveda</span>
+        <div class="footer-tel">
+            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.127 15.9817C18.0495 23.9714 21.3162 27.4188 28.8905 31.7154L26.5711 35.7047C17.8201 30.4467 12.6749 23.049 9.90615 17.466L14.127 15.9817Z"
+                    fill="#D9D4DD" />
+                <path
+                    d="M14.6478 5.85675C16.077 6.06911 17.368 7.47159 17.501 8.85697C17.7102 11.0371 18.1353 12.6518 18.8994 14.6895C19.3192 15.8088 18.9536 16.8249 18.2016 17.4005C17.188 18.1764 16.4939 19.2561 15.9554 20.1946C15.209 21.4954 11.8013 20.8739 10.7913 19.1787C8.71554 15.6948 6.68604 9.55006 8.27072 5.84947C8.51963 5.2682 9.17653 5.04379 9.91351 5.15329L14.6478 5.85675Z"
+                    fill="#D9D4DD" />
+                <path
+                    d="M40.3141 33.21C40.2627 31.8445 38.9437 30.4655 37.5034 30.1742C35.2369 29.7158 33.5907 29.1232 31.5405 28.1617C30.4144 27.6335 29.3024 27.8541 28.6069 28.4899C27.6694 29.3468 26.451 29.8678 25.3997 30.2598C23.9426 30.8032 24.186 34.0728 25.8465 35.2236C29.2591 37.5887 35.4743 40.2304 39.5548 39.1897C40.1958 39.0263 40.5107 38.4374 40.4842 37.7333L40.3141 33.21Z"
+                    fill="#D9D4DD" />
+            </svg>
+             <a href="tel:+5531971483681">+55 31 97148-3681</a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
