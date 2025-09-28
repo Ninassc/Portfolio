@@ -81,6 +81,35 @@ clicarMudar.addEventListener('click', () => {
   pagina3.classList.toggle('darkmode')
   pagina5.classList.toggle('darkmode')
   clicarMudar.innerHTML = darkMode ? iconeLight : iconeDark
+  SalvarAlteracoes()
+})
+
+//salvar as alterções quando recarrega a página e abre de novo aaaaa
+
+function SalvarAlteracoes() {
+  if (darkMode == true) {
+    localStorage.setItem("dark", "true")
+  }
+  else {
+    localStorage.setItem("dark", "false")
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("dark") == "true") {
+    pagina1.classList.add("darkmode")
+    pagina2.classList.add("darkmode")
+    pagina3.classList.add('darkmode')
+    pagina5.classList.add('darkmode')
+    darkMode = true
+  }
+  else {
+    pagina1.classList.remove("darkmode")
+    pagina2.classList.remove("darkmode")
+    pagina3.classList.remove('darkmode')
+    pagina5.classList.remove('darkmode')
+    darkMode = false
+  }
 })
 
 
@@ -120,14 +149,14 @@ document.querySelectorAll(".hskill").forEach(skill => {
 
 
 
-// efeito 2
+// efeito 2 (subir os trem dos cards)
 document.querySelectorAll(".hskill").forEach(card => {
   card.addEventListener("mousemove", e => {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
-    const rotateX = ((y / rect.height) - 0.5) * 20; 
+    const rotateX = ((y / rect.height) - 0.5) * 20;
     const rotateY = ((x / rect.width) - 0.5) * 20;
 
     card.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
@@ -144,7 +173,7 @@ document.querySelectorAll(".skills").forEach(card => {
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
-    const rotateX = ((y / rect.height) - 0.5) * 20; 
+    const rotateX = ((y / rect.height) - 0.5) * 20;
     const rotateY = ((x / rect.width) - 0.5) * 20;
 
     card.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
@@ -156,7 +185,7 @@ document.querySelectorAll(".skills").forEach(card => {
 });
 
 
-//máscara para adicionar o @gmail.com 
+//máscara para adicionar o @gmail.com (tem que arrumar isso aqui direito)
 mascara_email = document.getElementById("email")
 
 mascara_email.addEventListener("blur", () => {
@@ -164,7 +193,7 @@ mascara_email.addEventListener("blur", () => {
 
   var tamanho = inputValor.length
   if (inputValor && !inputValor.endsWith("@gmail.com")) {
-    inputValor = inputValor.slice(0,tamanho) + "@gmail.com"
+    inputValor = inputValor.slice(0, tamanho) + "@gmail.com"
   }
 
   document.getElementById("email").value = inputValor
