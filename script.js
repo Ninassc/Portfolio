@@ -84,7 +84,7 @@ clicarMudar.addEventListener('click', () => {
   SalvarAlteracoes()
 })
 
-//salvar as alterções quando recarrega a página e abre de novo aaaaa
+//salva as alterções quando recarrega a página e abre de novo aaaaa
 
 function SalvarAlteracoes() {
   if (darkMode == true) {
@@ -185,8 +185,9 @@ document.querySelectorAll(".skills").forEach(card => {
 });
 
 
+
 //máscara para adicionar o @gmail.com (tem que arrumar isso aqui direito)
-mascara_email = document.getElementById("email")
+let mascara_email = document.getElementById("email")
 
 mascara_email.addEventListener("blur", () => {
   var inputValor = mascara_email.value.trim();
@@ -197,4 +198,29 @@ mascara_email.addEventListener("blur", () => {
   }
 
   document.getElementById("email").value = inputValor
+})
+
+//máscara telefone 
+let telefone = document.getElementById("telefone")
+
+telefone.addEventListener("input", () => {
+  let valorTelefone = telefone.value
+
+  if(valorTelefone[0] != "(" && valorTelefone[0] != undefined){
+    valorTelefone = "(" + valorTelefone.slice(0)
+  }
+
+  if(valorTelefone[3] != ")" && valorTelefone[3] != undefined){
+    valorTelefone = valorTelefone.slice(0,3) + ")" + valorTelefone.slice(3)
+  }
+
+  if(valorTelefone[4] != " " && valorTelefone[4] != undefined){
+    valorTelefone = valorTelefone.slice(0,4) + " " + valorTelefone.slice(4)
+  }
+
+   if(valorTelefone[10] != "-" && valorTelefone[10] != undefined){
+    valorTelefone = valorTelefone.slice(0,10) + "-" + valorTelefone.slice(10)
+  }
+
+  telefone.value = valorTelefone
 })
